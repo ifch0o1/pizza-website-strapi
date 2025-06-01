@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category"
+    },
+    "PriceSmall": {
+      "type": "decimal",
+      "required": true,
+      "default": 10
+    },
+    "WeightSmall": {
+      "type": "string",
+      "default": "300-350 гр",
+      "required": true
+    },
+    "PriceMedium": {
+      "type": "decimal",
+      "required": true,
+      "default": 15
+    },
+    "WeightMedinum": {
+      "type": "string",
+      "default": "400-750 гр",
+      "required": true
+    },
+    "PriceLarge": {
+      "type": "decimal",
+      "required": true,
+      "default": 26
+    },
+    "WeightLarge": {
+      "type": "string",
+      "default": "1300-200 гр",
+      "required": true
+    },
+    "SitePosition": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
+    }
+  }
+}
