@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
@@ -21,37 +21,37 @@
       "target": "api::product.product",
       "mappedBy": "category"
     },
-    "PriceSmall": {
+    "priceSmall": {
       "type": "decimal",
       "required": true,
       "default": 10
     },
-    "WeightSmall": {
+    "weightSmall": {
       "type": "string",
       "default": "300-350 гр",
       "required": true
     },
-    "PriceMedium": {
+    "priceMedium": {
       "type": "decimal",
       "required": true,
       "default": 15
     },
-    "WeightMedinum": {
+    "weightMedinum": {
       "type": "string",
       "default": "400-750 гр",
       "required": true
     },
-    "PriceLarge": {
+    "priceLarge": {
       "type": "decimal",
       "required": true,
       "default": 26
     },
-    "WeightLarge": {
+    "weightLarge": {
       "type": "string",
       "default": "1300-200 гр",
       "required": true
     },
-    "SitePosition": {
+    "position": {
       "type": "integer",
       "required": true,
       "unique": true,

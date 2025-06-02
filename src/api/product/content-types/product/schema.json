@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "minLength": 3,
       "required": true
@@ -25,7 +25,7 @@
         "files"
       ]
     },
-    "Description": {
+    "description": {
       "type": "text",
       "required": false,
       "unique": false
@@ -36,7 +36,7 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "Materials": {
+    "materials": {
       "type": "text",
       "minLength": 10,
       "required": true
