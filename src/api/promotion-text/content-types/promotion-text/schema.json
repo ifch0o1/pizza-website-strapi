@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "promotion_texts",
+  "info": {
+    "singularName": "promotion-text",
+    "pluralName": "promotion-texts",
+    "displayName": "Promotion Text"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
